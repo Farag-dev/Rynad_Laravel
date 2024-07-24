@@ -34,8 +34,17 @@ Add Blog
                 <input type="file" class="form-control "  name="image" id="image">
             </div>
             <div class="form-group">
+                <label for="alt_text">Alt_Text for image</label>
+                <input type="text" class="form-control py-1 "  name="alt_text" id="alt_text">
+            </div>
+            <div class="form-group">
                 <label for="desc">Introduction</label>
                 <textarea class="form-control " rows="3"  name="Introduction" id="desc" placeholder="Introduction"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="desc">Add blog Tags</label>
+                <p class="py-1 text-black-50" >Write keywords and seprate them via whitespace</p>
+                <input type="text" class="form-control "  name="blog_tags" id="blog_tags">
             </div>
             <div class="form-group">
                 <label for="sub_title_one">Sub Title One</label>

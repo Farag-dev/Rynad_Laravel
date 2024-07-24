@@ -10,7 +10,7 @@ class BLOGController extends Controller
     /**
      * Display a listing of the resource.
      */
-    
+
     public function index()
     {
         $blogs=BLOG::paginate(3);
@@ -54,6 +54,8 @@ class BLOGController extends Controller
         BLOG::create([
             'main_title'=>$request->main_title,
             'Introduction'=>$request->Introduction,
+            'alt_text'=>$request->alt_text,
+            'blog_tags'=>$request->blog_tags,
             'sub_title_one'=>$request->sub_title_one,
             'description_one'=>$request->description_one,
             'sub_title_two'=>$request->sub_title_two,
@@ -96,6 +98,8 @@ class BLOGController extends Controller
         }
         $blog->main_title = $request->main_title;
         $blog->Introduction = $request->Introduction;
+        $blog->alt_text = $request->alt_text;
+        $blog->blog_tags = $request->blog_tags;
         $blog->sub_title_one = $request->sub_title_one;
         $blog->description_one = $request->description_one;
         $blog->sub_title_two = $request->sub_title_two;

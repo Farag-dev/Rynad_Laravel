@@ -17,6 +17,8 @@
     monde numérique ! Bénéficiez d'un accompagnement personnalisé pour obtenir des
     certifications mondialement reconnues et devenir un expert en sécurité en ligne !" name="description">
 
+    <link rel="shortcut icon" href="{{ asset('frontend/img/rynadLOGO2.png') }}" type="image/x-icon">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

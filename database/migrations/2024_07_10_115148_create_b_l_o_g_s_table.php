@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('main_title')->required;
             $table->string('image')->required;
+            $table->string('alt_text')->required;
             $table->text('Introduction')->required;
+            $table->string('blog_tags')->required;
             $table->text('sub_title_one')->nullable();
             $table->text('description_one')->nullable();
             $table->text('sub_title_two')->nullable();

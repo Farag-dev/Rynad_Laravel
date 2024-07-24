@@ -13,9 +13,9 @@ Blog
 
 <div class="row g-5 justify-content-center">
     @foreach ($blogs as $blog)
-            <div class="col-lg-6 col-xl-4 wow fadeIn"  data-wow-delay=".3s">
+            <div class="col-lg-6 col-xl-4 wow fadeIn {{ $blog->blog_tags }}"  data-wow-delay=".3s" >
                 <div class="blog-item position-relative bg-light rounded" >
-                    <img src="{{ Storage::url($blog->image) }}" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="{{ Storage::url($blog->image) }}" class="img-fluid w-100 rounded-top" alt="{{ $blog->alt_text }}">
                     <div class="blog-btn d-flex justify-content-between position-relative px-3"
                         style="margin-top: -75px;">
                         <div class="blog-icon btn  px-3 rounded-pill my-auto" style="background-color: #2e2ea3;">
