@@ -28,8 +28,8 @@ Route::post('/', [BrevoController::class, 'store'])->name('contact.store');
 //blog_routs
 Route::get('/blog','BLOGController@index')->name('Blog');
 Route::get('/blogdetails/{id}','BLOGController@blogdetails')->name('Blogdetails');
-Route::get('/Rynad_Home','BLOGController@Home_page')->name('home');
-Route::post('/Rynad_Home','BLOGController@Home_page')->name('home');
+Route::get('/Rynad_Home','BLOGController@Home_page')->name('home_user');
+Route::post('/Rynad_Home','BLOGController@Home_page')->name('home_user');
 
 
 //Contact_routs

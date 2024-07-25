@@ -180,10 +180,14 @@ Home
                                 <div class="blog-icon-1">
                                     <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3" ></i></p>
                                 </div>
+                                <?php
+                                $url=route('Blogdetails', $blog->id);
+                                $text = route('Blogdetails', $blog->id);
+                                ?>
                                 <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ urlencode($url) }}&title={{ urlencode($blog->main_title) }}&summary={{ urlencode($blog->Introduction) }}&source={{ urlencode('Rynad GuardNet') }}" target="_blank" class="btn me-1"><i class="fab fa-linkedin-in text-white"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?text={{ urlencode($blog->main_title) }}&url={{ urlencode($url) }}&via={{ urlencode('RynadGuardNet') }}" target="_blank" class="btn me-1"><i class="fa-brands fa-x-twitter text-white"></i></a>
+                                    <a href="https://wa.me/?text={{ urlencode($text) }}" target="_blank"class="btn me-1"><i class="fab fa-whatsapp text-white"></i></a>
                                 </div>
                             </div>
                         </div>

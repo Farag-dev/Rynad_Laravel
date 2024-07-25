@@ -76,7 +76,18 @@ class BLOGController extends Controller
         $blog=BLOG::find($id);
         return view('dashboard.editblog',compact('blog'));
     }
+    public function Linkedin($id)
+    {
+        $blog = BLOG::findOrFail($id);
 
+        return view('frontend.blogdetails', [
+            'BLOG' => $blog,
+            'url' => route('Blogdetails', $blog->id),
+            'title' => $blog->main_title,
+            'summary' => $blog->Introduction,
+            'source' => config('app.name')
+        ]);
+    }
     /**
      * Show the form for editing the specified resource.
      */

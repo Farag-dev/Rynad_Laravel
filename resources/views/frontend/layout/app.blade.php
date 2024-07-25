@@ -27,6 +27,7 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -67,7 +68,7 @@
                 </button>
                 <div class="collapse navbar-collapse  " style="float: right;" id="navbarCollapse">
                     <div class="navbar-nav ms-auto  p-0 ">
-                        <a href="{{ route('home') }}" class="nav-item nav-link active text-secondary">Accueil</a>
+                        <a href="{{ route('home_user') }}" class="nav-item nav-link active text-secondary">Accueil</a>
                         <a href="{{ route('Blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
                     </div>
@@ -87,7 +88,7 @@
 
             <div class="col-lg-3 col-md-6">
                 <div class="mt-4 d-flex flex-column short-link">
-                    <a href="{{ route('home') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Accueil</a>
+                    <a href="{{ route('home_user') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Accueil</a>
                     <a href="{{ route('Blog') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Blog</a>
                     <a href="{{ route('contact') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Contact</a>
                     <a href="{{ route('confidentialité') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Politique de confidentialité</a>
