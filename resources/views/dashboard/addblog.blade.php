@@ -43,8 +43,12 @@ Add Blog
             </div>
             <div class="form-group">
                 <label for="desc">Add blog Tags</label>
-                <p class="py-1 text-black-50" >Write keywords and seprate them via whitespace</p>
+                <p class="py-1 text-black-50" >Write keywords and seprate them via comma " , "</p>
                 <input type="text" class="form-control "  name="blog_tags" id="blog_tags">
+            </div>
+            <div class="form-group">
+                <label for="desc">Add meta description</label>
+                <input type="text" class="form-control "  name="meta_description" id="meta_description">
             </div>
             <div class="form-group">
                 <label for="sub_title_one">Sub Title One</label>

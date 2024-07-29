@@ -56,6 +56,7 @@ class BLOGController extends Controller
             'Introduction'=>$request->Introduction,
             'alt_text'=>$request->alt_text,
             'blog_tags'=>$request->blog_tags,
+            'meta_description'=>$request->meta_description,
             'sub_title_one'=>$request->sub_title_one,
             'description_one'=>$request->description_one,
             'sub_title_two'=>$request->sub_title_two,
@@ -111,6 +112,7 @@ class BLOGController extends Controller
         $blog->Introduction = $request->Introduction;
         $blog->alt_text = $request->alt_text;
         $blog->blog_tags = $request->blog_tags;
+        $blog->meta_description= $request->meta_description;
         $blog->sub_title_one = $request->sub_title_one;
         $blog->description_one = $request->description_one;
         $blog->sub_title_two = $request->sub_title_two;

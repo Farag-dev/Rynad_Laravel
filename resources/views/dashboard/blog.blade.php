@@ -22,6 +22,7 @@ Blogs
          <th>alt_text for image</th>
          <th>Introduction</th>
          <th>blog tags</th>
+         <th>meta description</th>
          <th>Sub Title One</th>
          <th>Description One</th>
          <th>Sub Title Two</th>
@@ -41,6 +42,7 @@ Blogs
            <td>{{ $blog->alt_text}} </td>
            <td>{{ $blog->Introduction}} </td>
            <td>{{ $blog->blog_tags}} </td>
+           <td>{{ $blog->meta_description}} </td>
            <td>{{ $blog->sub_title_one }} </td>
            <td>{{ $blog->description_one }}</td>
            <td>{{ $blog->sub_title_two }} </td>

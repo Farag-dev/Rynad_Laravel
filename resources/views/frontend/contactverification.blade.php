@@ -69,28 +69,11 @@ Contact
             <div class="row ">
 
                 <div class="col-lg-11 mx-auto wow fadeIn row contact-form rounded p-3" style="margin-top: -150px;" data-wow-delay=".5s">
-                    <div class="col-lg-6 ">
-                        <div class="text-center mt-5 pt-5 wow fadeIn " data-wow-delay=".3s" >
-                            <h2 class="mb-3 text-white" >Besoin d'aide ou d'informations ?</h2>
-                            <h3 class=" " style="color:#2e2ea3 ;"> N'hésitez pas à nous contacter !</h3>
+                    <div class="col-lg-12 ">
+                        <div class="text-center mt-5  wow fadeIn " data-wow-delay=".3s" >
+                            <div class="mb-3 display-1 text-center" ><i class="fa-solid fa-circle-check text-white"></i></div>
+                            <h3 class=" " style="color:#2e2ea3 ;"> Les données ont été envoyées avec succès !</h3>
                         </div>
-                    </div>
-                    <div class=" col-lg-6 mx-auto">
-                        <form action="{{ route('send-form') }}" method="POST" >
-                            @csrf
-                        <div class="mb-2">
-                            <input type="text" class="form-control border-0 py-3" name="name" id="name" placeholder="Votre Nom">
-                        </div>
-                        <div class="mb-2">
-                            <input type="email" class="form-control border-0 py-3" name="email" id="email" placeholder="Votre Email">
-                        </div>
-                        <div class="mb-2">
-                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="text-center mx-auto w-50 ">
-                            <button class="btn text-white py-3 px-5 " style="background-color:#2e2ea3 ; " type="submit" value="Envoyer un message">Envoyer un message</button>
-                        </div>
-                        </form>
                     </div>
                 </div>
             </div>

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('alt_text')->required;
             $table->text('Introduction')->required;
             $table->string('blog_tags')->required;
+            $table->text('meta_description')->required;
             $table->text('sub_title_one')->nullable();
             $table->text('description_one')->nullable();
             $table->text('sub_title_two')->nullable();

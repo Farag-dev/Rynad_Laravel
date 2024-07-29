@@ -19,7 +19,7 @@ Blog
                     <div class="blog-btn d-flex justify-content-between position-relative px-3"
                         style="margin-top: -75px;">
                         <div class="blog-icon btn  px-3 rounded-pill my-auto" style="background-color: #2e2ea3;">
-                            <a href="{{ route('Blogdetails',['id'=>$blog->id]) }}" class="btn text-white">Read More</a>
+                            <a href="{{ route('Blogdetails',['id'=>$blog->id,'main_title'=>$blog->main_title]) }}" class="btn text-white">Read More</a>
                         </div>
                         <div class="blog-btn-icon btn  px-4 py-3 rounded-pill " style="background-color: #2e2ea3;">
                             <div class="blog-icon-1">
